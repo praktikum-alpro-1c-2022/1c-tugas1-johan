@@ -19,15 +19,29 @@ int main()
     //* Tugas 2
 
     //! variable sementara
-    int a = 7;
-    a = 10;
+    int a = 2;
+    int b = 8;
 
-    cout << a << endl;
+    int c = a;
+    a = b;
+    b = c;
+
+
+    cout << "Menggunakan Variabel Sementara" << endl;
+    cout << "Hasil a = " << a << endl;
+    cout << "Hasil b = " << b << endl;
 
     //! tanpa variable sementara
+    int a1 = 4;
+    int b1 = 7;
 
-    int b = 2;
-    cout << b + 2 << endl;
+    a1 = a1 - b1;
+    b1 = a1 + b1;
+    a1 = b1 - a1;
+
+    cout << "Tidak menggunakan Variabel Sementara" << endl;
+    cout << "Hasil a = " << a1 << endl;
+    cout << "Hasil b = " << b1 << endl;
 
     return 0;
 }
